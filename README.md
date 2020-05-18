@@ -1,4 +1,4 @@
-This is an amazing Login and Signup system for fictional comapny called, PixArt Studios.
+This is a responsive amazing Login and Signup system for fictional comapny called, PixArt Studios.
 
 Technologies Used:
 

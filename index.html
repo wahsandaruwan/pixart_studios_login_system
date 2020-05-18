@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SignIn Page</title>
+</head>
+<body>
+    <!-- Step 1 -->
+    <div class="alignment">
+        <!-- Title -->
+        <div class="heading">
+            <p>PixArt Studios</p>
+        </div>
+        <!-- Logo -->
+        <img src="img/logo.svg" class="logo" alt="">
+        <!-- Main Card -->
+        <div class="card">
+            <!-- Tabs -->
+            <div class="head">
+                <div></div>
+                <a href="#signin" id="signin" class="selected">Sign In</a>
+                <a href="#signup" id="signup">Sign Up</a>
+                <div></div>
+            </div>
+            <!-- Card Body -->
+            <div class="c-body">
+                <!-- Sign In -->
+                <form action="">
+                    <div class="userinputs">
+                        <div class="ui">
+                            <input type="text" placeholder="Your Username">
+                            <img src="img/username.svg" alt="">
+                        </div>
+                        <div class="ui">
+                            <input type="password" placeholder="Your Password">
+                            <img src="img/password.svg" alt="">
+                        </div>
+                        <label class="remember">
+                            <input type="checkbox">
+                            <span>Remember Me</span>
+                        </label>
+                    </div>
+                    <button>Sign In</button>
+                    <label class="forget">
+                        <a href="">Forget Password?</a>
+                    </label>
+                </form>
+                <!-- Sign Up -->
+                <form action="">
+                    <div class="userinputs">
+                        <div class="ui">
+                            <input type="text" placeholder="Your Username">
+                            <img src="img/username.svg" alt="">
+                        </div>
+                        <div class="ui">
+                            <input type="text" placeholder="Your Email">
+                            <img src="img/email.svg" alt="">
+                        </div>
+                        <div class="ui">
+                            <input type="password" placeholder="Your Password">
+                            <img src="img/password.svg" alt="">
+                        </div>
+                    </div>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

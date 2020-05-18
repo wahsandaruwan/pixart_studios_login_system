@@ -1,0 +1,226 @@
+/* Set custome font family */
+@font-face {
+    font-family: 'CustomeHeading';
+    src: url('./fonts/SFAtarianSystem.ttf') format('embedded-opentype'), /* Internet explorer */
+         url('./fonts/SFAtarianSystem.ttf') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/SFAtarianSystem.ttf') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/SFAtarianSystem.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/SFAtarianSystem.ttf') format('svg'); /* Legacy iOS */
+}
+
+/* Step 1 */
+*{
+    text-decoration: none;
+    font-family: "Roboto";
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background: #fa7a4f;
+    height: 100%;
+}
+
+/* Main Content */
+.alignment{
+    padding-bottom: 8px;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Haading */
+.heading{
+    margin-bottom: 40px;
+}
+.heading p{
+    font-size: 70px;
+    font-family: "CustomeHeading";
+}
+
+/* Logo */
+.logo{
+    width: 120px;
+}
+
+/* Sign In and Sign Up Section */
+.card{
+    background: #121212;
+    border: 9px solid #ff3e00;
+    border-radius: 120px;
+    margin-top: 0px;
+    height: 100%;
+    max-height: 446px;
+    width: 396px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+/* Tabs */
+.head{
+    border-bottom: 1px solid #373737;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 72px;
+}
+
+.head a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 28px;
+    display: flex;
+    color: #ece1de;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.head .selected{
+    position: relative;
+    color: #ff3e00;
+    font-weight: 700;
+}
+
+.head .selected:before{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #ff3e00;
+    border-radius: 99px 99px 0 0;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+
+/* Body of sign in and sign up */
+.c-body{
+    height: calc(100% - 72px);
+    display: flex;
+}
+
+/* Form */
+form{
+    padding: 44px 38px;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    right: 0;
+    transition: right 0.2s;
+}
+
+.slide form{
+    right: 100%;
+}
+
+/* Input Fields */
+.userinputs{
+    padding-top: 6px;
+    widows: 100%;
+}
+
+.ui{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.ui input{
+    background: #1C1C1C;
+    border-radius: 40px;
+    padding: 16px 18px 16px 51px;
+    width: 100%;
+    font-size: 17px;
+    color: #ece1de;
+}
+
+.ui img{
+    position: absolute;
+    width: 16px;
+    left: 19px;
+}
+
+/* Remember Me Check Box */
+.remember{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.remember input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.remember span{
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    color: #979797;
+    user-select: none;
+}
+
+.remember span:before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    border-radius: 6px;
+    background: #1C1C1C;
+}
+
+.remember:hover input ~ span:before{
+    background: #383838;
+}
+
+.remember input:checked ~ span:before{
+    background-image: url(./img/checked.png);
+    background-size: cover;
+}
+
+/* Button */
+.card button{
+    background: #ff3e00;
+    padding: 14px 52px;
+    display: block;
+    border-radius: 12px;
+    color: #ece1de;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.card button:hover{
+    background: #fa7a4f;
+    color: #1C1C1C;
+}
+
+/* Forget Pass */
+.forget{
+    margin-top: 10px;
+}
+.card .forget a{
+    text-decoration: none;
+    color: #979797;
+}
+
+

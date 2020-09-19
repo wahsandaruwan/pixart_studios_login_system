@@ -1,11 +1,13 @@
-This is a responsive amazing Login and Signup system for fictional comapny called, PixArt Studios.
+## This is a responsive amazing Login and Signup system for fictional comapny called, PixArt Studios.
 
-Technologies Used:
+#### Technologies Used:
 
-HTML5
+* HTML5
 
-CSS3
+* CSS3
 
-Javascript
+* Javascript
 
--You can commit to this project
+### License : MIT
+
+### You are welcome to update this source code if it contain any miss mathces.
